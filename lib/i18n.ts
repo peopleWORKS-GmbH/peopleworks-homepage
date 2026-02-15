@@ -63,10 +63,10 @@ export const texts = {
       },
       button: "E-Mail öffnen",
       addressTitle: "Adresse",
-      address: "123 Demo Street\n8000 Zürich, Schweiz",
+      address: "Rotackerstrasse 43\n8645 Jona, Schweiz",
       contactTitle: "Kontakt",
-      email: "email@example.com",
-      phone: "+41 44 555 55 55",
+      email: "info@peopleworks.ch",
+      phone: "+41 79 786 40 79",
     },
   },
   en: {
@@ -129,10 +129,10 @@ export const texts = {
       },
       button: "Open Email",
       addressTitle: "Address",
-      address: "123 Demo Street\n8000 Zurich, Switzerland",
+      address: "Rotackerstrasse 43\n8645 Jona, Switzerland",
       contactTitle: "Contact",
-      email: "email@example.com",
-      phone: "+41 44 555 55 55",
+      email: "info@peopleworks.ch",
+      phone: "+41 79 786 40 79",
     },
   },
 } as const;
@@ -143,7 +143,7 @@ export function getInitialLocale(): Locale {
   if (stored === "de" || stored === "en") return stored;
   const nav = navigator.language.toLowerCase();
   if (nav.startsWith("de")) return "de";
-  return "en";
+  return "de";
 }
 
 export function saveLocale(locale: Locale) {

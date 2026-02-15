@@ -47,7 +47,7 @@ export default function Home() {
 
       {/* Hero */}
       <section className="relative flex min-h-[60vh] items-center justify-center overflow-hidden bg-center">
-        <div className="absolute inset-0 bg-[url('https://images.squarespace-cdn.com/content/v1/697bca49f89ab47bd015c142/e0e59677-6438-451e-8181-9518f719ce2c/20190508183554-_DSC9139+2.jpg')] bg-cover bg-center" />
+        <div className="absolute inset-0 bg-[url('/keynote.jpg')] bg-cover bg-center" />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 mx-auto max-w-4xl px-6 text-center text-white">
           <h1 className="text-3xl font-semibold sm:text-5xl">{t.hero.title}</h1>
@@ -67,10 +67,10 @@ export default function Home() {
               key={idx}
               imageUrl={
                 idx === 0
-                  ? "https://images.squarespace-cdn.com/content/v1/697bca49f89ab47bd015c142/06d6bb10-4173-46db-85fa-55a91b72edee/anpassung.png"
+                  ? "/anpassung.png"
                   : idx === 1
-                    ? "https://images.squarespace-cdn.com/content/v1/697bca49f89ab47bd015c142/c0b8ba12-a972-4602-a3d3-91d30584e16c/kompetenzen.png"
-                    : "https://images.squarespace-cdn.com/content/v1/697bca49f89ab47bd015c142/e1fc1f6a-e6ce-405b-bd1f-2cb3e01db64b/fahigkeiten.png"
+                    ? "/kompetenzen.png"
+                    : "/fahigkeiten.png"
               }
               title={item.title}
               content={item.content}
@@ -142,7 +142,7 @@ function ServiceCard({
 }) {
   return (
     <div className="rounded-xl border border-zinc-200 p-6 shadow-sm">
-      <div className="mb-4 flex h-16 w-16 items-center justify-center overflow-hidden rounded-lg bg-zinc-50">
+      <div className="mb-4 flex h-16 w-16 items-center justify-center overflow-hidden rounded-lg">
         <img src={imageUrl} alt="Icon" className="h-12 w-12 object-contain" />
       </div>
       <h3 className="text-lg font-semibold">{title}</h3>
@@ -177,7 +177,7 @@ function Accordion({
             >
               <span className="font-medium">{item.title}</span>
               <span className="inline-block rounded-full border border-zinc-300 px-2 text-xs">
-                {isOpen ? "–" : "+"}
+                {isOpen ? "-" : "+"}
               </span>
             </button>
             {isOpen && (
@@ -280,7 +280,10 @@ function LanguageSwitcher({
       {(["de", "en"] as const).map((l) => (
         <button
           key={l}
-          onClick={() => onChange(l)}
+          onClick={() => {
+            saveLocale(l);
+            onChange(l);
+          }}
           className={`rounded-full px-3 py-1 ${
             locale === l
               ? "bg-zinc-900 text-white"
