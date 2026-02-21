@@ -85,16 +85,21 @@ export default function Home() {
           <div>
             <h2 className="mb-4 text-2xl font-semibold">{t.about.title}</h2>
             <p className="text-zinc-700">{t.about.copy}</p>
-            <Accordion className="mt-8" items={t.about.accordion} />
+            <Accordion className="mt-8" accordion={t.about.accordion} />
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-start justify-center">
             <img
-              src="https://images.squarespace-cdn.com/content/v1/697bca49f89ab47bd015c142/6fc2fa9d-1aa1-4dfd-bb5c-2d31beabec2a/Christoph+after+signing_2022.jpeg?format=1000w"
+              src="/portrait.jpg"
               alt="Christoph Küffer"
               className="h-auto max-h-[420px] w-full max-w-md rounded-lg object-cover shadow"
             />
           </div>
         </div>
+      </section>
+
+      {/* Bücher */}
+      <section className="mx-auto max-w-6xl px-6 py-20">
+        <BooksSection books={t.books} />
       </section>
 
       {/* Kontakt */}
@@ -146,46 +151,180 @@ function ServiceCard({
         <img src={imageUrl} alt="Icon" className="h-12 w-12 object-contain" />
       </div>
       <h3 className="text-lg font-semibold">{title}</h3>
-      <p className="mt-2 text-sm text-zinc-700">{content}</p>
+      <p className="mt-2 text-sm text-zinc-700 whitespace-pre-line">
+        {renderTextWithLink(content)}
+      </p>
     </div>
   );
 }
 
-type AccordionItem = {
-  title: string;
-  content: string;
+function renderTextWithLink(text: string): React.ReactNode {
+  // Handle [text](url) markdown-style links
+  const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+
+  const parts = [];
+  let lastIndex = 0;
+  let match;
+
+  while ((match = linkRegex.exec(text)) !== null) {
+    // Add text before the link
+    if (match.index > lastIndex) {
+      parts.push(text.substring(lastIndex, match.index));
+    }
+
+    // Add the link
+    parts.push(
+      <a
+        key={match.index}
+        href={match[2]}
+        className="text-blue-600 hover:underline"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {match[1]}
+      </a>,
+    );
+
+    lastIndex = match.index + match[0].length;
+  }
+
+  // Add remaining text
+  if (lastIndex < text.length) {
+    parts.push(text.substring(lastIndex));
+  }
+
+  return parts.length > 0 ? <>{parts}</> : text;
+}
+
+type AccordionData = {
+  cv: {
+    title: string;
+    subtitle: string;
+    careerTitle: string;
+    career: ReadonlyArray<{
+      period: string;
+      role: string;
+      link?: string;
+      linkText?: string;
+    }>;
+    skillsTitle: string;
+    skills: string;
+    otherTitle: string;
+    other: ReadonlyArray<{ text: string; link?: string; linkText?: string }>;
+  };
+  books: {
+    title: string;
+    paragraphs: ReadonlyArray<string>;
+    orderText: string;
+    orderUrl: string;
+  };
+  mission: {
+    title: string;
+    paragraphs: ReadonlyArray<string>;
+  };
 };
 
 function Accordion({
-  items,
+  accordion,
   className,
 }: {
-  items: ReadonlyArray<AccordionItem>;
+  accordion: AccordionData;
   className?: string;
 }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+
   return (
     <div className={className}>
-      {items.map((item, idx) => {
-        const isOpen = openIndex === idx;
-        return (
-          <div key={idx} className="border-b border-zinc-200 py-3">
-            <button
-              className="flex w-full items-center justify-between py-2 text-left"
-              onClick={() => setOpenIndex(isOpen ? null : idx)}
-              aria-expanded={isOpen}
-            >
-              <span className="font-medium">{item.title}</span>
-              <span className="inline-block rounded-full border border-zinc-300 px-2 text-xs">
-                {isOpen ? "-" : "+"}
-              </span>
-            </button>
-            {isOpen && (
-              <p className="mt-2 text-sm text-zinc-700">{item.content}</p>
-            )}
+      {/* CV Accordion Item */}
+      <div className="border-b border-zinc-200 py-3">
+        <button
+          className="flex w-full items-center justify-between py-2 text-left"
+          onClick={() => setOpenIndex(openIndex === 0 ? null : 0)}
+          aria-expanded={openIndex === 0}
+        >
+          <span className="font-medium">{accordion.cv.title}</span>
+          <span className="inline-block rounded-full border border-zinc-300 px-2 text-xs">
+            {openIndex === 0 ? "-" : "+"}
+          </span>
+        </button>
+        {openIndex === 0 && (
+          <div className="mt-2 text-sm text-zinc-700">
+            <br />
+            <h4 className="font-medium">{accordion.cv.careerTitle}</h4>
+            <ul className="mt-2 space-y-2">
+              {accordion.cv.career.map((item, idx) => (
+                <li key={idx} className="list-disc list-inside">
+                  <strong>{item.period}</strong> {renderTextWithLink(item.role)}
+                </li>
+              ))}
+            </ul>
+            <br />
+            <h4 className="font-medium">{accordion.cv.skillsTitle}</h4>
+            <p className="mt-1">{accordion.cv.skills}</p>
+            <br />
+            <h4 className="font-medium">{accordion.cv.otherTitle}</h4>
+            <ul className="mt-2 space-y-1">
+              {accordion.cv.other.map((item, idx) => (
+                <li key={idx} className="list-disc list-inside">
+                  {renderTextWithLink(item.text)}
+                </li>
+              ))}
+            </ul>
           </div>
-        );
-      })}
+        )}
+      </div>
+
+      {/* Books Accordion Item */}
+      <div className="border-b border-zinc-200 py-3">
+        <button
+          className="flex w-full items-center justify-between py-2 text-left"
+          onClick={() => setOpenIndex(openIndex === 1 ? null : 1)}
+          aria-expanded={openIndex === 1}
+        >
+          <span className="font-medium">{accordion.books.title}</span>
+          <span className="inline-block rounded-full border border-zinc-300 px-2 text-xs">
+            {openIndex === 1 ? "-" : "+"}
+          </span>
+        </button>
+        {openIndex === 1 && (
+          <div className="mt-2 text-sm text-zinc-700 space-y-3">
+            {accordion.books.paragraphs.map((paragraph, idx) => (
+              <p key={idx}>{paragraph}</p>
+            ))}
+            <p>
+              <a
+                href={accordion.books.orderUrl}
+                className="text-blue-600 hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {accordion.books.orderText}
+              </a>
+            </p>
+          </div>
+        )}
+      </div>
+
+      {/* Mission Accordion Item */}
+      <div className="border-b border-zinc-200 py-3">
+        <button
+          className="flex w-full items-center justify-between py-2 text-left"
+          onClick={() => setOpenIndex(openIndex === 2 ? null : 2)}
+          aria-expanded={openIndex === 2}
+        >
+          <span className="font-medium">{accordion.mission.title}</span>
+          <span className="inline-block rounded-full border border-zinc-300 px-2 text-xs">
+            {openIndex === 2 ? "-" : "+"}
+          </span>
+        </button>
+        {openIndex === 2 && (
+          <div className="mt-2 text-sm text-zinc-700 space-y-3">
+            {accordion.mission.paragraphs.map((paragraph, idx) => (
+              <p key={idx}>{paragraph}</p>
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   );
 }
@@ -294,6 +433,66 @@ function LanguageSwitcher({
           {l.toUpperCase()}
         </button>
       ))}
+    </div>
+  );
+}
+
+function BooksSection({ books }: { books: any }) {
+  return (
+    <div className="space-y-12">
+      {/* Title and Introduction */}
+      <div>
+        <h2 className="text-2xl font-semibold sm:text-3xl">{books.title1}</h2>
+        <h2 className="mb-6 text-2xl font-semibold sm:text-3xl">
+          {books.title2}
+        </h2>
+        <div className="max-w-5xl space-y-4 text-zinc-700">
+          {books.intro.map((paragraph: string, idx: number) => (
+            <p key={idx}>{paragraph}</p>
+          ))}
+        </div>
+      </div>
+
+      {/* Book Cards */}
+      <div className="grid gap-8 lg:grid-cols-2">
+        <BookCard book={books.band1} />
+        <BookCard book={books.band2} />
+      </div>
+    </div>
+  );
+}
+
+function BookCard({ book }: { book: any }) {
+  return (
+    <div className="grid gap-6 md:grid-cols-2">
+      <div className="flex justify-center">
+        <img
+          src={book.imageUrl}
+          alt={book.subtitle}
+          className="h-auto max-h-80 w-auto rounded-lg shadow-lg"
+        />
+      </div>
+      <div className="space-y-4">
+        <div>
+          <h4 className="text-lg font-semibold text-zinc-900">{book.title}</h4>
+          <h5 className="mt-1 text-base font-medium">{book.subtitle}</h5>
+          <p className="mt-2 text-sm text-zinc-700">{book.description}</p>
+        </div>
+        <div className="space-y-1 text-sm text-zinc-600">
+          <p>{book.published}</p>
+          <p>{book.authors}</p>
+          <p>{book.isbn}</p>
+          <p>{book.details}</p>
+        </div>
+        <a
+          href={book.orderUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center rounded-full bg-zinc-900 px-6 py-2 text-sm font-medium text-white hover:bg-zinc-800"
+        >
+          {book.orderText}
+        </a>
+      </div>
     </div>
   );
 }
