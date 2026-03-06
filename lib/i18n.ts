@@ -40,16 +40,16 @@ export const texts = {
           careerTitle: "Beruflicher Werdegang",
           career: [
             {
-              period: "Seit 2022",
-              role: "Director of Skills bei [Learning Pool](https://www.learningpool.com/)",
+              period: "Seit 2008",
+              role: "Gründer und Geschäftsführer der Firma peopleWORKS GmbH, welche Firmen in Future HR, Skills und People Engagement berät und begleitet",
             },
             {
-              period: "Seit 2008",
-              role: "Gründer und Geschäftsführer der Firma [peopleWORKS GmbH](https://www.peopleworks.ch/), welche Firmen in Future HR, Skills und People Engagement berät und begleitet",
+              period: "2022 - 2025",
+              role: "Director of Skills bei [Learning Pool](https://www.learningpool.com/) ehemals People-Analytix AG, eine KI-basierte Skill-Management Plattform zur Entwicklung der Belegschaft",
             },
             {
               period: "2018-2022",
-              role: "Mitgründer und CEO der [People-Analytix AG](http://www.people-analytix.com/), eine KI-basierte Skill-Management Plattform zur Entwicklung der Belegschaft (People-Analytix wurde im 2022 durch Learning Pool übernommen)",
+              role: "Mitgründer und CEO der People-Analytix AG, eine KI-basierte Skill-Management Plattform zur Entwicklung der Belegschaft (People-Analytix wurde im 2022 durch Learning Pool übernommen)",
             },
             {
               period: "2014-2020",
