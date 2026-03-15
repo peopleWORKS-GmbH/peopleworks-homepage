@@ -119,11 +119,6 @@ export default function Home() {
             <p className="mt-2 whitespace-pre-line text-zinc-700">
               {t.contact.address}
             </p>
-            <h4 className="mt-6 text-lg font-medium">
-              {t.contact.contactTitle}
-            </h4>
-            <p className="mt-2 text-zinc-700">{t.contact.email}</p>
-            <p className="text-zinc-700">{t.contact.phone}</p>
           </div>
         </div>
       </section>
