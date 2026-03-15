@@ -309,7 +309,7 @@ export const texts = {
         orderText: "Order Now",
         orderUrl:
           "https://docs.google.com/forms/d/e/1FAIpQLSfcEwplQFwqRpniIOQAIyxvpDGVSUCgBxkJRm5aRyMaUSXIPg/viewform",
-        imageUrl: "/betterboss_cover.tiff",
+        imageUrl: "/betterboss_cover.png",
       },
       band2: {
         title: "BetterBoss Volume 2",
