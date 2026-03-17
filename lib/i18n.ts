@@ -56,6 +56,10 @@ export const texts = {
               role: "Gründungspartner der [Spot Coaching AG](http://www.spotcoaching.ch/), der virtuelle Sparringspartner für Führungskräfte in beruflichen Fragen",
             },
             {
+              period: "2008-2012",
+              role: "Head Human Resources der [Leonteq AG](http://www.leonteq.com/), und zuständig für alle HR-Themen in der internationalen Expansion und im IPO-Prozess",
+            },
+            {
               period: "2006",
               role: "Bank Julius Baer: Leiter der Abteilung HR International und zuständig für alle Personal-abteilungen ausserhalb der Schweiz mit einem starken Fokus auf Asien, Middle East und Osteuropa",
             },
