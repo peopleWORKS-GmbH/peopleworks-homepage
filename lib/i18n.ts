@@ -48,31 +48,31 @@ export const texts = {
               role: "Director of Skills bei [Learning Pool](https://www.learningpool.com/) ehemals People-Analytix AG, eine KI-basierte Skill-Management Plattform zur Entwicklung der Belegschaft",
             },
             {
-              period: "2018-2022",
+              period: "2018 - 2022",
               role: "Mitgründer und CEO der People-Analytix AG, eine KI-basierte Skill-Management Plattform zur Entwicklung der Belegschaft (People-Analytix wurde im 2022 durch Learning Pool übernommen)",
             },
             {
-              period: "2014-2020",
+              period: "2014 - 2020",
               role: "Gründungspartner der [Spot Coaching AG](http://www.spotcoaching.ch/), der virtuelle Sparringspartner für Führungskräfte in beruflichen Fragen",
             },
             {
-              period: "2008-2012",
+              period: "2008 - 2012",
               role: "Head Human Resources der [Leonteq AG](http://www.leonteq.com/), und zuständig für alle HR-Themen in der internationalen Expansion und im IPO-Prozess",
             },
             {
-              period: "2006",
+              period: "2006 - 2008",
               role: "Bank Julius Baer: Leiter der Abteilung HR International und zuständig für alle Personal-abteilungen ausserhalb der Schweiz mit einem starken Fokus auf Asien, Middle East und Osteuropa",
             },
             {
-              period: "2002",
+              period: "2002 - 2006",
               role: "EurotaxGlass's: Leiter Head Human Resources und verantwortlich für alle Personal-Belange in 18 europäischen Ländern",
             },
             {
-              period: "2000",
+              period: "2000 - 2002",
               role: "Jobscout 24: Leiter Business Development beim europäischen Online-Rekrutierungsportal JobScout24 und verantwortlich für den Aufbau und Inhalt des Portals www.hrgate.ch",
             },
             {
-              period: "1995",
+              period: "1995 - 2000",
               role: "UBS: Einstieg bei UBS (ehemals Schweizerischer Bankverein) im strategischen HR am Hauptsitz. Danach Auslandaufenthalt in New York und zuständig für Expatriates in der Investmentbank. Nach der Fusion mit UBS verantwortlich für die Hochschulrekrutierung im Bereiche Privat- und Firmenkunden",
             },
           ],
