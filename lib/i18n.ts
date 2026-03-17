@@ -61,19 +61,19 @@ export const texts = {
             },
             {
               period: "2006 - 2008",
-              role: "Bank Julius Baer: Leiter der Abteilung HR International und zuständig für alle Personal-abteilungen ausserhalb der Schweiz mit einem starken Fokus auf Asien, Middle East und Osteuropa",
+              role: "Leiter der Abteilung HR International bei Bank Julius Baer und zuständig für alle Personal-abteilungen ausserhalb der Schweiz mit einem starken Fokus auf Asien, Middle East und Osteuropa",
             },
             {
               period: "2002 - 2006",
-              role: "EurotaxGlass's: Leiter Head Human Resources und verantwortlich für alle Personal-Belange in 18 europäischen Ländern",
+              role: "Leiter Head Human Resources bei EurotaxGlass's und verantwortlich für alle Personal-Belange in 18 europäischen Ländern",
             },
             {
               period: "2000 - 2002",
-              role: "Jobscout 24: Leiter Business Development beim europäischen Online-Rekrutierungsportal JobScout24 und verantwortlich für den Aufbau und Inhalt des Portals www.hrgate.ch",
+              role: "Leiter Business Development beim europäischen Online-Rekrutierungsportal JobScout24 und verantwortlich für den Aufbau und Inhalt des Portals www.hrgate.ch",
             },
             {
               period: "1995 - 2000",
-              role: "UBS: Einstieg bei UBS (ehemals Schweizerischer Bankverein) im strategischen HR am Hauptsitz. Danach Auslandaufenthalt in New York und zuständig für Expatriates in der Investmentbank. Nach der Fusion mit UBS verantwortlich für die Hochschulrekrutierung im Bereiche Privat- und Firmenkunden",
+              role: "Einstieg bei UBS (ehemals Schweizerischer Bankverein) als Graduate im strategischen HR am Hauptsitz. Danach Auslandaufenthalt in New York und zuständig für Expatriates in der Investmentbank. Nach der Fusion mit UBS verantwortlich für die Hochschulrekrutierung im Bereiche Privat- und Firmenkunden",
             },
           ],
           skillsTitle: "Wichtigste Skills",
