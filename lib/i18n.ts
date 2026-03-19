@@ -241,19 +241,19 @@ export const texts = {
             },
             {
               period: "2006 - 2008",
-              role: "Bank Julius Baer: Head of HR International department, responsible for all HR departments outside Switzerland with a strong focus on Asia, Middle East and Eastern Europe",
+              role: "Head of HR International at Bank Julius Baer: responsible for all HR departments outside Switzerland with a strong focus on Asia, Middle East and Eastern Europe",
             },
             {
               period: "2002 - 2006",
-              role: "EurotaxGlass's: Head of Human Resources, responsible for all HR matters in 18 European countries",
+              role: "Head of Human Resources at EurotaxGlass's and responsible for all HR matters in 18 European countries",
             },
             {
               period: "2000 - 2002",
-              role: "Jobscout 24: Head of Business Development at the European online recruitment portal JobScout24 and responsible for building and content of the portal www.hrgate.ch",
+              role: "Head of Business Development at the European online recruitment portal JobScout24 and responsible for building and content of the portal www.hrgate.ch",
             },
             {
               period: "1995 - 2000",
-              role: "UBS: Started at UBS (formerly Swiss Bank Corporation) in strategic HR at headquarters. Then overseas assignment in New York responsible for expatriates in investment banking. After the merger with UBS responsible for university recruitment in private and corporate clients",
+              role: "Career start as a Graduate at UBS (formerly Swiss Bank Corporation) in strategic HR at headquarters. Then overseas assignment in New York responsible for expatriates in investment banking. After the merger with UBS responsible for university recruitment in private and corporate clients",
             },
           ],
           skillsTitle: "Key Skills",
