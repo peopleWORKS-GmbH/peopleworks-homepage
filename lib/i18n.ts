@@ -202,7 +202,7 @@ export const texts = {
     },
     about: {
       title: "About",
-      copy: "I have worked in HR for over thirty years—as a specialist, Head of HR and entrepreneur. I share my experience so organizations can master their challenges effectively.",
+      copy: "I have been working in human resources for over thirty years, first as a specialist, then as Head of Human Resources, and for the past 15 years as an entrepreneur. I have held these roles in various organizations and industries: at a global company in the financial sector, at a pan-European family-owned business that was acquired by a private equity firm, and at a fast-growing startup that successfully went public after five years. I would like to share my extensive experience—both the highs and the lows—and the insights I have gained with other companies so that they can successfully overcome the challenges ahead.",
       accordion: {
         cv: {
           title: "Short CV",
