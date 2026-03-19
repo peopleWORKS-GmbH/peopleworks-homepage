@@ -16,17 +16,17 @@ export const texts = {
         {
           title: "HR Transformation",
           content:
-            "Automatisierung, Künstliche Intelligenz, Data-Driven HR, kontinuierliches Upskilling oder People Analytics prägen nicht nur die Arbeit und Zusammenarbeit, sondern definieren die Rolle Personalabteilung neu. Das Zusammenspiel von Mensch und Technologie wird zu einer immer wichtigeren Aufgabe und fordert die HR-Abteilung heraus, ihr Geschäftsmodell zukunftssicher und effizient aufzustellen.\n\n Die Notwendigkeit, diesen Wandel im HR aktiv zu gestalten, ist in den meisten Unternehmen erkannt. Die Herausforderung besteht jedoch im Erarbeiten eines gemeinsamen Zielbildes und der anschliessenden Umsetzung.\n\n Ich unterstütze dich dabei, Klarheit zu gewinnen, die richtigen Prioritäten zu setzen und deine HR-Organisation für die Zukunft auszurichten.",
+            "Automatisierung, Künstliche Intelligenz, Data-Driven HR, kontinuierliches Upskilling oder People Analytics prägen nicht nur die Arbeit und Zusammenarbeit, sondern definieren die Rolle Personalabteilung neu. Die Notwendigkeit, diesen Wandel im HR aktiv zu gestalten, ist in den meisten Unternehmen erkannt. Die Herausforderung besteht jedoch im Erarbeiten eines gemeinsamen Zielbildes und der anschliessenden Umsetzung.",
         },
         {
           title: "HR Verstärkung",
           content:
-            "Schnelles Wachstum, Firmenintegrationen oder der Launch grosser strategischer Initiativen: In Phasen des Umbruchs steht die HR-Organisation unter maximalem Druck. Oft fehlt es an Kapazität, an spezifischer Erfahrung für Sondersituationen oder schlicht an einer neutralen Führungshand, die den Kurs hält. Ich biete dir die Verstärkung, die deine Personalabteilung genau dann braucht.\n\n Dadurch sichere ich die operative Kontinuität in kritischen Phasen und bringe eine sofortige Entlastung im Team mit einem unvoreingenommener Blick von aussen.",
+            "Schnelles Wachstum, Firmenintegrationen oder der Launch grosser strategischer Initiativen: In Phasen des Umbruchs steht die HR-Organisation unter maximalem Druck. Oft fehlt es an Kapazität, an spezifischer Erfahrung für Sondersituationen oder schlicht an einer neutralen Führungshand, die den Kurs hält. Ich biete dir die Verstärkung, die deine Personalabteilung genau dann braucht.",
         },
         {
           title: "Skills ins Zentrum stellen",
           content:
-            "Laut [Deloitte](https://www2.deloitte.com/us/en/insights/topics/talent/organizational-skill-based-hiring.html) haben Unternehmen mit einem skill-basierten Ansatz 63% mehr Chancen erfolgreich zu sein und bieten ihren Mitarbeitenden eine um 79 % positivere Arbeitserfahrung.\n\n Projektbasiertes Arbeiten, verkürzte Technologiezyklen, geforderte Agilität, oder die Schwierigkeit Talente zu behalten, erfordern neuartige Konzepte. Ein skill-basierter Ansatz adressiert diese Herausforderungen effektiv und effizient.\n\n Aber was bedeutet ein solcher Ansatz für Unternehmen? Wie gewinne ich die Unterstützung des Managements und wo beginne ich mit der Umsetzung? Ich habe Unternehmen auf diesem Weg eng und über Monate begleitet und kenne die Strategien und Ansätze, dass dies gelingt.",
+            "Projektbasiertes Arbeiten, verkürzte Technologiezyklen, geforderte Agilität, oder die Schwierigkeit Talente zu behalten, erfordern neuartige Konzepte. Ein skill-basierter Ansatz adressiert diese Herausforderungen effektiv und effizient. Aber was bedeutet ein solcher Ansatz für Unternehmen? Wie gewinne ich die Unterstützung des Managements und wo beginne ich mit der Umsetzung? Ich habe Unternehmen auf diesem Weg eng und über Monate begleitet und kenne die Strategien und Ansätze, dass dies gelingt.",
         },
       ],
     },
