@@ -78,7 +78,7 @@ export const texts = {
           ],
           skillsTitle: "Wichtigste Skills",
           skills:
-            "Digital HR | Digitale Transformation | HR-Tech | KI im HR | Neue Arbeitswelten | Moderation | Vertrauen schaffen | Coaching | Empathie | Rudern | problemlösend | ausdauernd | Projektmanagement",
+            "Digital HR | Digitale Transformation | HR-Tech | KI im HR | Neue Arbeitswelten | Skill-basiert | Vertrauen schaffen | Coaching | Empathie | Rudern | problemlösend | ausdauernd | Mitarbeiter-Engagement",
           otherTitle: "Sonstiges",
           other: [
             {
@@ -186,17 +186,17 @@ export const texts = {
         {
           title: "HR Transformation",
           content:
-            "Automation, artificial intelligence, data-driven HR, continuous upskilling, and people analytics are not only shaping work and collaboration, but also redefining the role of the HR department. The interaction between people and technology is becoming an increasingly important task and challenges the HR department to make its business model future-proof and efficient.\n\n Most companies recognize the need to actively shape this change in HR. However, the challenge lies in developing a common vision and then implementing it.\n\n I support you in gaining clarity, setting the right priorities, and aligning your HR organization for the future.",
+            "Automation, artificial intelligence, data-driven HR, continuous upskilling, and people analytics are not only shaping work and collaboration, but also redefining the role of the HR department. Most companies recognize the need to actively shape this change in HR. However, the challenge lies in developing a common vision and then implementing it.",
         },
         {
-          title: "HR Reinforcement",
+          title: "Strengthening your HR Team",
           content:
-            "Rapid growth, company integrations, or the launch of major strategic initiatives: in times of change, the HR organization is under maximum pressure. Often, there is a lack of capacity, specific experience for special situations, or simply a neutral guiding hand to keep the course. I offer you the reinforcement your HR department needs at precisely this moment.\n\n In this way, I ensure operational continuity in critical phases and provide immediate relief for the team with an unbiased outside perspective.",
+            "Rapid growth, company integrations, or the launch of major strategic initiatives: in times of change, the HR organization is under maximum pressure. Often, there is a lack of capacity, specific experience for special situations, or simply a neutral guiding hand to keep the course. I offer you the reinforcement your HR department needs at precisely this moment.",
         },
         {
           title: "Put Skills at the Center",
           content:
-            "According to [Deloitte](https://www2.deloitte.com/us/en/insights/topics/talent/organizational-skill-based-hiring.html), companies with a skill-based approach have a 63% greater chance of success and offer their employees a 79% more positive work experience. \n\n Project-based work, shortened technology cycles, the demand for agility, and the difficulty of retaining talent require innovative concepts. A skill-based approach addresses these challenges effectively and efficiently.\n\n But what does such an approach mean for companies? How do I gain management support and where do I start with implementation? I have closely accompanied companies on this path for months and know the strategies and approaches that make it successful.",
+            "Project-based work, shortened technology cycles, the demand for agility, and the retaining of talent require innovative concepts. A skill-based approach addresses these challenges effectively and efficiently. But what does such an approach mean for companies? I have closely accompanied companies on this path for months and know the strategies and approaches that make it successful.",
         },
       ],
     },
@@ -210,49 +210,55 @@ export const texts = {
           careerTitle: "Professional Experience",
           career: [
             {
-              period: "Since 2022",
-              role: "Director of Skills at Learning Pool",
-              link: "https://www.learningpool.com/",
-              linkText: "Learning Pool",
-            },
-            {
               period: "Since 2008",
               role: "Founder and Managing Director of peopleWORKS GmbH, which advises and supports companies in Future HR, Skills and People Engagement",
               link: "https://www.peopleworks.ch/",
               linkText: "peopleWORKS GmbH",
             },
             {
-              period: "2018-2022",
+              period: "2022 - 2025",
+              role: "Director of Skills at Learning Pool, a global learning technology company",
+              link: "https://www.learningpool.com/",
+              linkText: "Learning Pool",
+            },
+            {
+              period: "2018 - 2022",
               role: "Co-founder and CEO of People-Analytix AG, www.people-analytix.com, an AI-based skill management platform for workforce development (People-Analytix was acquired by Learning Pool in 2022)",
               link: "http://www.people-analytix.com/",
               linkText: "www.people-analytix.com",
             },
             {
-              period: "2014-2020",
+              period: "2014 - 2020",
               role: "Founding partner of Spot Coaching AG, www.spotcoaching.ch; the virtual sparring partner for executives in professional matters",
               link: "http://www.spotcoaching.ch/",
               linkText: "www.spotcoaching.ch",
             },
+             {
+              period: "2008 - 2012",
+              role: "Head of Human Resources at Leonteq AG, responsible for all HR matters related to the international expansion and the IPO process",
+              link: "http://www.leonteq.com/",
+              linkText: "www.leonteq.com",
+            },
             {
-              period: "2006",
+              period: "2006 - 2008",
               role: "Bank Julius Baer: Head of HR International department, responsible for all HR departments outside Switzerland with a strong focus on Asia, Middle East and Eastern Europe",
             },
             {
-              period: "2002",
+              period: "2002 - 2006",
               role: "EurotaxGlass's: Head of Human Resources, responsible for all HR matters in 18 European countries",
             },
             {
-              period: "2000",
+              period: "2000 - 2002",
               role: "Jobscout 24: Head of Business Development at the European online recruitment portal JobScout24 and responsible for building and content of the portal www.hrgate.ch",
             },
             {
-              period: "1995",
+              period: "1995 - 2000",
               role: "UBS: Started at UBS (formerly Swiss Bank Corporation) in strategic HR at headquarters. Then overseas assignment in New York responsible for expatriates in investment banking. After the merger with UBS responsible for university recruitment in private and corporate clients",
             },
           ],
           skillsTitle: "Key Skills",
           skills:
-            "Digital HR | Digital Transformation | HR-Tech | AI in HR | New Work | Moderation | Building Trust | Coaching | Empathy | Rowing | Problem-solving | Persistent | Project Management",
+            "Digital HR | Digital Transformation | HR-Tech | AI in HR | New Work | Skill-based | Coaching | Empathy | Rowing | Problem-solving | Persistent | People Engagement",
           otherTitle: "Other",
           other: [
             {
@@ -261,10 +267,10 @@ export const texts = {
               linkText: "www.betterboss.ch",
             },
             {
-              text: "Lecturer at FHNW and HTW Chur",
+              text: "Former Lecturer at the HTW Chur",
             },
             {
-              text: "Master in Business Administration at University of Zurich",
+              text: "Master in Art in Business Administration at University of Zurich",
             },
             {
               text: "1992 Participation in the Olympic Summer Games in Barcelona, sport rowing",
