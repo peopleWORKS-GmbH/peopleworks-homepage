@@ -88,7 +88,7 @@ export const texts = {
               text: "Ehemaliger Dozent an der HTW Chur",
             },
             {
-              text: "Master in Business Administration an der Universität Zürich",
+              text: "Master of Arts in Business Administration an der Universität Zürich",
             },
             {
               text: "1992 Teilnahme an den Olympischen Sommerspielen in Barcelona, Sportart Rudern",
