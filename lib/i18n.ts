@@ -26,7 +26,7 @@ export const texts = {
         {
           title: "Skills ins Zentrum stellen",
           content:
-            "Projektbasiertes Arbeiten, verkürzte Technologiezyklen, Agilität, oder Talente zu behalten, erfordern neuartige Konzepte. Ein skill-basierter Ansatz adressiert diese Herausforderungen effektiv und effizient. Aber was bedeutet ein solcher Ansatz für Unternehmen? Wie gewinne ich die Unterstützung des Managements und wo beginne ich mit der Umsetzung? Ich habe Unternehmen auf diesem Weg eng begleitet und kenne die Strategien und Ansätze, dass dies gelingt.",
+            "Projektbasiertes Arbeiten, verkürzte Technologiezyklen, Agilität, oder Talente zu behalten, erfordern neuartige Konzepte. Ein skill-basierter Ansatz adressiert diese Herausforderungen effektiv und effizient. Aber was bedeutet ein solcher Ansatz für Unternehmen? Ich habe Unternehmen auf diesem Weg eng begleitet und kenne die Strategien und Ansätze, dass dies gelingt.",
         },
       ],
     },
