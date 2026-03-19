@@ -19,7 +19,7 @@ export const texts = {
             "Automatisierung, Künstliche Intelligenz, Data-Driven HR, kontinuierliches Upskilling oder People Analytics prägen nicht nur die Arbeit und Zusammenarbeit, sondern definieren die Rolle Personalabteilung neu. Die Notwendigkeit, diesen Wandel im HR aktiv zu gestalten, ist in den meisten Unternehmen erkannt. Die Herausforderung besteht jedoch im Erarbeiten eines gemeinsamen Zielbildes und der anschliessenden Umsetzung.",
         },
         {
-          title: "HR Verstärkung",
+          title: "HR-Team Verstärkung",
           content:
             "Schnelles Wachstum, Firmenintegrationen oder der Launch grosser strategischer Initiativen: In Phasen des Umbruchs steht die HR-Organisation unter maximalem Druck. Oft fehlt es an Kapazität, an spezifischer Erfahrung für Sondersituationen oder schlicht an einer neutralen Führungshand, die den Kurs hält. Ich biete dir die Verstärkung, die deine Personalabteilung genau dann braucht.",
         },
