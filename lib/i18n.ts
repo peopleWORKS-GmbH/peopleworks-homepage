@@ -85,7 +85,7 @@ export const texts = {
               text: 'Co-Autor der Bücher "BetterBoss" und "Inspired at Work"',
             },
             {
-              text: "Dozent an der FHNW und HTW Chur",
+              text: "Ehemaliger Dozent an der HTW Chur",
             },
             {
               text: "Master in Business Administration an der Universität Zürich",
